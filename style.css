@@ -1,0 +1,819 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+
+
+/* MENU */
+.container-header{
+    background: #1e2326;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+header{
+    width: 100vw;
+}
+
+header{
+    max-width: 1100px;
+    margin: auto;
+    display:flex;
+    justify-content: space-between;
+    padding: 15px  20px;
+    align-items: center;
+}
+
+.container-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #1CB698;
+    text-decoration: none;
+}
+
+.container-header ul{
+    display: flex;
+    list-style: none;
+}
+
+.container-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.container-header  nav ul li a:hover{
+    color: #1CB698;
+}
+.nav-responsive{
+    background-color: #1CB698;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.profile {
+    border-radius: 50%; /* Establece el radio del borde para que la imagen se vea redonda */
+    width: 400px; /* Ajusta el ancho de la imagen según sea necesario */
+    height: 200px; /* Ajusta la altura de la imagen según sea necesario */
+}
+
+/* sectipn home */
+.home {
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(img/fondo.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    
+}
+
+.container-banner{
+    padding: 10px; /* Reducir el padding */
+    background-color: #1e2326;
+    max-width: 300px; /* Reducir el ancho máximo */
+    margin: auto; /* Centrar horizontalmente */
+    position: absolute; /* Cambiar a posición fija */
+    top: 7rem; /* Ajustar la distancia desde la parte superior */
+    left: 50%   ; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Centrar horizontalmente */
+    text-align: center;
+    border-radius: 20px;
+}
+
+
+.container-banner img{
+    margin-top: 10px; /* Reducir el margen superior de la imagen */
+    margin-bottom: 10px; /* Agregar un margen inferior a la imagen */
+    border: 7px solid #1CB698;
+    display: block;
+    width: 80%; /* Reducir el tamaño de la imagen */
+    margin: auto;
+    border-radius: 50%;
+}
+
+.home .container-banner h1{
+    margin-top: 10px; /* Reducir el margen superior del título */
+    margin-bottom: 5px; /* Agregar un margen inferior al título */
+    font-size: 30px; /* Reducir el tamaño del título */
+    font-family: 'Righteous';
+}
+
+.home .container-banner h2{
+    margin-bottom: 10px; /* Agregar un margen inferior al subtítulo */
+    font-size: 12px; /* Reducir el tamaño del subtítulo */
+    font-weight: normal;
+}
+
+.home .container-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.home .container-banner .redes a:hover{
+    background-color: #1CB698;
+}
+
+
+/* ABOUTE ME */
+.AboutMe{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.AboutMe .container-section{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.AboutMe h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.AboutMe .container-section p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.AboutMe .container-section p span{
+    color:#1CB698;
+    font-weight: bold;
+}
+
+.AboutMe .fila{
+    display: flex;
+}
+
+.AboutMe .fila .col{
+    width: 50%;
+}
+
+.AboutMe .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.AboutMe .fila .col ul{
+    list-style: none;
+}
+
+.AboutMe .fila .col ul li{
+    margin: 12px 0;
+}
+
+.AboutMe .fila .col ul li strong{
+    display: inline-block;
+    color: #1CB698;
+    width: 138px;
+}
+
+.AboutMe .fila .col ul li span{
+    background-color: #1CB698;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.AboutMe .fila .col .container-interest{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.AboutMe .fila .col .container-interest .interest{
+    width: 100px;
+    height: 100px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.AboutMe .fila .col .container-interest .interest:hover{
+    background-color: #1CB698;
+}
+
+.AboutMe .fila .col .container-interest .interes{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.AboutMe button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.AboutMe button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.AboutMe button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+
+.AboutMe button:hover .overlay{
+    width: 100%;
+}
+
+/* section skills  */
+.skills{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.skills .container-section{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.skills h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.skills .fila{
+    display: flex;
+}
+
+.skills .fila .col{
+    width: 50%;
+    padding: 0 20px;
+
+}
+
+.skills .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.skills .skill  > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.skills .skill .barra-skills{
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.skills .skill .progreso{
+    background-color: #1CB698;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+
+.skills .skill .barra-skills span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #1CB698;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+
+}
+
+/* estas clases se agregraran dinamicamente mediante javascript */
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 65%;}
+}
+
+.skills .skill .htmlcss{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes htmlcss {
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+.skills .skill .react{
+    width: 0%;
+    animation: 2s react forwards;
+}
+@keyframes react {
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+
+.skills .skill .express{
+    width: 0%;
+    animation: 2s express forwards;
+}
+@keyframes express {
+    0%{width: 0%;}
+    100%{width: 45%;}
+}
+
+.skills .skill .comunicacion{
+    width: 0%;
+    animation: 2s comunicacion forwards;
+}
+@keyframes comunicacion {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.skills .skill .trabajoequipo{
+    width: 0%;
+    animation: 2s trabajoequipo forwards;
+}
+@keyframes trabajoequipo {
+    0%{width: 0%;}
+    100%{width: 76%;}
+}
+
+.skills .skill .dedicacion{
+    width: 0%;
+    animation: 2s dedicacion forwards;
+}
+@keyframes dedicacion {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+
+/* seccion skills */
+
+.curriculum{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.curriculum .container-section{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.curriculum h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    
+}
+
+.curriculum .fila{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.curriculim .fila .col{
+    width: 49%;
+    padding: 0 20px;
+}
+
+.curriculum .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.curriculum .fila .izquierda{
+    border-right: 2px solid #252A2E;
+   
+}
+
+.curriculum .fila .derecha{
+    border-left: 5px solid #252A2E;
+    
+}
+.curriculum .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252A2E;
+    position: relative;
+}
+
+.curriculum .fila .item h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+.curriculum .fila .item .name{
+    color: #1CB698;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+
+.curriculum .fila .item .fecha{
+    display: block;
+    color: #1CB698;
+    margin-bottom: 10px;
+}
+
+.curriculum .fila .item p{
+    line-height: 24px;
+}
+
+.curriculum .fila .izq{
+    border-right: 2px solid #1CB698;
+    margin-right: 50px;
+    width: 35vw;
+}
+
+.curriculum .fila .derecho{
+    border-left: 2px solid #1CB698;
+    margin-left: 40px;
+}
+
+
+.curriculum .fila .item .conectori{
+    height: 2px;
+    background-color: #1CB698;
+    width: 47px;
+    position:absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+
+.curriculum .fila .item .conectori .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color:#1CB698;
+    float: right;
+    position:relative;
+    bottom: 4px;
+}
+
+.curriculum .fila .item .conectord{
+    height: 2px;
+    background-color: #1CB698;
+    width: 47px;
+    position:absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+
+.curriculum .fila .item .conectord .circulod{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color:#1CB698;
+    float: left;
+    position:relative;
+    bottom: 4px;
+}
+
+/* section portafolio */
+.portafolio{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.portafolio .container-section{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.portafolio h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    
+}
+
+
+.portafolio .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portafolio .galeria .proyecto{
+    position:relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.portafolio .galeria .proyecto img{
+    width: 100%;
+    display: block
+}
+
+.portafolio .galeria .proyecto .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(28,182,152,.8),rgba(28,182,152,.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+
+.portafolio .galeria .proyecto .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.portafolio .galeria .proyecto .overlay:hover{
+    opacity: 1;
+}
+
+/* section contact */
+
+.contact{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.contact .container-section{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contact h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contact .fila{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+   
+}
+
+.contact .col input, .contact .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+
+.contact button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.contact button .overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+
+.contact button:hover .overlay{
+    width: 100%;
+}
+
+.contact .col .info{
+    position: absolute;
+    top: 40%;
+    background-color: #252A2E;
+    padding: 20px;
+    max-width: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact .col .info ul{
+    list-style: none;
+}
+
+.contact .col .info ul{
+    margin-bottom: 20px;
+}
+
+.contact .col .info ul li i{
+    color: #1CB698;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* section footer */
+
+footer{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .redes{
+    margin-bottom: 0px;   
+}
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #1CB698;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+/* section responsive */
+@media screen and (max-width: 980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+
+    }
+}
+
+@media screen and (max-width:700px){
+    .AboutMe .fila{
+        display: block;
+    }
+    .AboutMe .fila .col{
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width:700px){
+    .AboutMe .fila{
+        display: block;
+    }
+    .AboutMe .fila .col{
+        width: fit-content;
+    }
+
+    .skills .fila{
+        display: block;
+    }
+
+    .skills .fila .col{
+        width: 100%;
+    }
+
+    .AboutMe .fila .col .barra-skills{
+        width: 100%;
+    }
+
+    .curriculum .fila{
+        display: block;
+    }
+
+    .curriculum .fila .col{
+        width: 90%;
+    }
+
+    .curriculum .fila .derecha{
+        margin-left: 20px;
+    }
+
+    .portafolio .galeria{
+        display: block;
+        width: 100%;
+    }
+
+    .portafolio .galeria .proyecto{
+        max-width: 100%;
+    }
+
+    .conatct .fila .col {
+        width: 100%;
+    }
+}
