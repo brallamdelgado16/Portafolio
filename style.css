@@ -816,4 +816,8 @@ footer .arriba{
     .conatct .fila .col {
         width: 100%;
     }
+
+    .curriculum .fila .izq{
+        width: 100%;
+    }
 }
