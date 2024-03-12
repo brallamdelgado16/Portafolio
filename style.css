@@ -342,7 +342,7 @@ header{
 }
 @keyframes javascript {
     0%{width: 0%;}
-    100%{width: 65%;}
+    100%{width: 80%;}
 }
 
 .skills .skill .htmlcss{
@@ -351,7 +351,7 @@ header{
 }
 @keyframes htmlcss {
     0%{width: 0%;}
-    100%{width: 70%;}
+    100%{width: 90%;}
 }
 
 .skills .skill .react{
@@ -360,7 +360,7 @@ header{
 }
 @keyframes react {
     0%{width: 0%;}
-    100%{width: 50%;}
+    100%{width: 65%;}
 }
 
 .skills .skill .express{
@@ -369,7 +369,7 @@ header{
 }
 @keyframes express {
     0%{width: 0%;}
-    100%{width: 45%;}
+    100%{width: 70%;}
 }
 
 .skills .skill .comunicacion{
