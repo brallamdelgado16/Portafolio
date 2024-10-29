@@ -48,10 +48,15 @@ document.addEventListener('DOMContentLoaded', function() {
         let mailtoLink = 'mailto:brallamdelgado@gmail.com' +
                          '?subject=' + encodeURIComponent(subject) +
                          '&body=' + encodeURIComponent('Nombre: ' + name + '\n' +
-                                                      'Teléfono: ' + phone + '\n' +
-                                                      'Correo: ' + email + '\n' +
-                                                      'Mensaje: ' + message);
+                                                       'Teléfono: ' + phone + '\n' +
+                                                       'Correo: ' + email + '\n' +
+                                                       'Mensaje: ' + message);
 
         window.location.href = mailtoLink;
     });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const video = document.getElementById("miVideo");
+    video.play();
 });

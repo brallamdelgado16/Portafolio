@@ -572,6 +572,13 @@ header{
     display: block
 }
 
+.portafolio .proyecto video {
+    width: 300px; /* Cambia el tamaño según necesites */
+    height: auto; /* Mantiene la proporción del video */
+    max-width: 100%; /* Asegura que no se desborde */
+    border-radius: 8px; /* Añade bordes redondeados, opcional */
+}
+
 .portafolio .galeria .proyecto .overlay{
     position: absolute;
     top: 0;
